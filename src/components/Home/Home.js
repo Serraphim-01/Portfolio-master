@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet"; 
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
@@ -8,6 +9,10 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
+
+      <Helmet>
+        <title>Jeremiah's Portfolio</title> {/* Change the title here */}
+      </Helmet>
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">

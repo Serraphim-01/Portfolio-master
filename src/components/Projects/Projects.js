@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import pingpong from "../../Assets/Projects/pingpong.png";
 import syringe from "../../Assets/Projects/syringe.png";
 import zombiekiller from "../../Assets/Projects/zombiekiller.png";
+import survival from "../../Assets/Projects/Survive.png";
 import { ProjectCardNoImage } from "./ProjectCards";
 
 function Projects() {
@@ -53,9 +54,23 @@ function Projects() {
             />
           </Col> 
         </Row>
-        <p style={{ color: "white" }}>
+        <h2 style={{ color: "white" }}>
+          Projects In Progress:
+        </h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={survival}
+              isBlog={false}
+              title="Survival Game In Progress"
+              description="Survive by farming, crafting Resources, fighting enemies and playing with friends"
+              videoLink=""
+            />
+          </Col>
+        </Row>
+        <h2 style={{ color: "white" }}>
           Some other side dishes.
-        </p>
+        </h2>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
         <Col md={4} className="project-card">
             <ProjectCardNoImage

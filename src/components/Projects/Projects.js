@@ -6,6 +6,9 @@ import pingpong from "../../Assets/Projects/pingpong.png";
 import syringe from "../../Assets/Projects/syringe.png";
 import zombiekiller from "../../Assets/Projects/zombiekiller.png";
 import survival from "../../Assets/Projects/Survive.png";
+import Jerry from "../../Assets/Projects/Jerry.png";
+import Eri from "../../Assets/Projects/Eri.png";
+import Ajayi from "../../Assets/Projects/Ajayi.png";
 import { ProjectCardNoImage } from "./ProjectCards";
 
 function Projects() {
@@ -19,6 +22,42 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on recently.
         </p>
+        <h2 style={{ color: "white" }}>
+          Web Development Projects
+        </h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Ajayi}
+              isBlog={false}
+              title="Portfolio Website (In Development)"
+              description="A modern portfolio website showcasing professional work and skills. Currently under development."
+              websiteLink="https://goodness-portfolio.onrender.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Eri}
+              isBlog={false}
+              title="Daramz Creations Portfolio"
+              description="A completed portfolio website featuring creative works and professional achievements."
+              websiteLink="https://daramzcreations.onrender.com/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Jerry}
+              isBlog={false}
+              title="Portfolio Master"
+              description="A comprehensive portfolio website showcasing projects and professional experience."
+              websiteLink="https://portfolio-master-3xg2.onrender.com"
+            />
+          </Col>
+        </Row>
+
+        <h2 style={{ color: "white" }}>
+          Game Development Projects
+        </h2>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard

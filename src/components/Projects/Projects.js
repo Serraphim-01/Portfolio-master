@@ -7,6 +7,7 @@ import Eri from "../../Assets/Projects/Eri.png";
 import maziminds from "../../Assets/Projects/maziminds.png";
 import chatapp from "../../Assets/Projects/chat-app.png";
 import ecommerce from "../../Assets/Projects/ecommerce.png";
+import chatbot from "../../Assets/Projects/chatbot.png";
 
 function Projects() {
   return (
@@ -43,6 +44,15 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={chatbot}
+              isBlog={false}
+              title="Simple AI Chat APP"
+              description="A simple AI chat app made with Nextjs, Tailwind and Groq AI API"
+              websiteLink="https://chatbot-nextjs-0.netlify.app"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={Jerry}
               isBlog={false}
               title="Portfolio Master"
@@ -68,6 +78,7 @@ function Projects() {
               websiteLink="https://shopping-website-rytq.onrender.com/"
             />
           </Col>
+          
         </Row>
       </Container>
     </Container>
